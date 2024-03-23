@@ -12,22 +12,33 @@
   <body>
     <div class = "weather-app">
     <header>
-        <form action="">
-            <input type="search" placeholder="Enter a City ..." required />
-            <input type="submit" value = "Search"/>
+        <form class="search-form">
+            <input class = "search-form-input" type="search" placeholder="Enter a City ..." required />
+            <input class = "search-form-btn" type="submit" value = "Search"/>
         </form>
     </header>
     <main>
+    <div class="weather-app-data">
         <div>
-        <h1>Cape Town</h1>
-        <p>
+        <h1 class="weather-app-city">Cape Town</h1>
+        <p class="weather-app-details">
             Saturday 15:28, cloudy with showers
             <br />
-            Humidity: 70%, Wind: 9.15km/h
+            Humidity: <strong>70%</strong> , Wind: <strong>9.15km/h</strong>
         </p>
     </div>
-    <div>
-        🌧 21°C
+    <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">
+        🌧
+        </div>
+        <div class="weather-app-temperature">
+        21
+        </div>
+        <div class="weather-app-unit">
+        °C
+        </div>
+    </div>
+    </div>
     </div>
     </main>
     <footer>
